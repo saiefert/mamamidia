@@ -1,5 +1,6 @@
 from flask import Flask
 from mapamidia import resultado
+from atualizaMapamidia import arquivo
 
 
 app = Flask(__name__)
@@ -12,7 +13,7 @@ def consultaAD():
 
 @app.route('/atualizaADHuna')
 def atualizaAD():
-    return resultado
+    return arquivo
 
 
 if __name__ == '__main__':
